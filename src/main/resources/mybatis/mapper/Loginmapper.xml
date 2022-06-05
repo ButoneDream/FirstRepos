@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.helpoldadmin.dao.LoginDao">
+    <select id="selectOneUser" resultType="Login">
+        select * from login where uname=#{uname} and pwd = #{pwd}
+    </select>
+
+    <insert id="insertUser" parameterType="Login">
+        insert into login values (#{id},#{uname},#{pwd},#{phone},#{isDel})
+    </insert>
+
+
+</mapper>

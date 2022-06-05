@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.helpoldadmin.dao.VolDao">
+    <select id="findAll" resultType="Notice">
+        select * from vol
+    </select>
+
+    <insert id="add" parameterType="Notice">
+        insert into vol values(#{uid},#{id},#{cont},#{date},#{note})
+    </insert>
+
+    <update id="update" parameterType="Notice">
+        update vol set cont=#{cont},date=#{date},note=#{note} where id=#{id}
+    </update>
+
+    <delete id="deleteByID" parameterType="int">
+        delete from vol where id=#{id}
+    </delete>
+
+    <select id="findByPage" resultType="Notice">
+        select * from vol limit #{nowPage},#{rows}
+    </select>
+
+    <select id="findTotals" resultType="Long">
+        select count(*) from vol
+    </select>
+
+</mapper>
