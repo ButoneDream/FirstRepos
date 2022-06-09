@@ -1,5 +1,5 @@
-# 健康老龄管理后台项目
-## 结合springboot mybatis mysql 开发的增删查改模板项目
+# 健康老龄管理后台项目前端网页
+## vue2结合springboot mybatis mysql 开发的增删查改模板项目
 
 > A Vue.js project
 
@@ -10,7 +10,7 @@
 npm install
 
 # serve with hot reload at localhost:8080
-npm run dev
+npm run d
 
 # build for production with minification
 npm run build
