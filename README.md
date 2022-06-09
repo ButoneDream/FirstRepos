@@ -1,2 +1,7 @@
-# FirstRepos
-# modify something
+# SpringBoot+Mybatis+Mysql开发后台接口
+##1、登录注册模块
+##2、用户信息模块
+##3、血糖数据模块
+##4、提醒服务模块
+##5、互助信息模块
+##6、志愿活动模块
